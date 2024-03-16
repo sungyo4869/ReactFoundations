@@ -8,15 +8,15 @@
         <script type="text/jsx">
             const app = document.getElementById('app');
 
-            function Header(props) {
-                console.log(props)
-                return (<h1>Develop. Preview. Ship</h1>)
+            function Header({ title }) {
+                return (<h1>{title}</h1>)
             }
 
             function HomePage() {
                 return (
                     <div>
                         <Header title="React"/>
+                        <Header title="a New Title"/>
                     </div>
                 )
               }
