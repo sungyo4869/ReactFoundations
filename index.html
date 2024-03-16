@@ -13,14 +13,15 @@
             }
 
             function HomePage() {
+                const [likes, setLikes] = React.useState();
+
                 function handleClick() {
-                    console.log('increment like count');
+                    setLikes(likes + 1)
                 }
                 
                 return (
                     <div>
-                        <Header title="Develop. Preview. Ship."/>
-                        <button onClick={handleClick}>Like</button>
+                        <button onClick={handleClick}>Like({likes})</button>
                     </div>
                 );
               }
